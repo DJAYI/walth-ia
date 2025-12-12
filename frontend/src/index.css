@@ -1,20 +1,35 @@
+/* ================== Google Fonts ================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Sora:wght@100..800&display=swap');
+
+
+/* ================== Reset Básico ================== */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+/* ================== Variables ========= ========= */
 :root {
     /* ================== Colores ================== */
 
-    /* Escala Green (50 → 950) */
-    --green-50:  #FAFFE5;
-    --green-100: #F3FFC6;
-    --green-200: #E6FF94;
-    --green-300: #D2FF56;
-    --green-400: #BBF724;
-    --green-500: #9CDE04;
-    --green-600: #79B200;
-    --green-700: #5A8704;
-    --green-800: #496A0A;
-    --green-900: #31470B;
-    --green-950: #1F3201;
+    /* Escala Blue (50 → 950) */
+    --blue-50:  #F0F7FE;
+    --blue-100: #DDEDFC;
+    --blue-200: #C3E0FA;
+    --blue-300: #99CDF7;
+    --blue-400: #69B2F1;
+    --blue-500: #4C97EC;  /* Color principal */
+    --blue-600: #3077E0;
+    --blue-700: #2862CD;
+    --blue-800: #264FA7;
+    --blue-900: #244684;
+    --blue-950: #1A2C51;
 
-    /* Colores principales basados en tu diseño */
+    /* Colores existentes */
     --color-black: #1C1C1C;
     --color-dark-blue: #021024;
 
@@ -22,37 +37,28 @@
     --color-black-200: hsl(240, 5%, 25%);
     --color-black-300: hsl(240, 5%, 15%);
     --color-black-400: hsl(240, 5%, 10%);
-
     --color-white: hsl(206, 0%, 100%);
-    
+    --color-blanco: #fafafa;
+
     --color-subtitulo: hsl(225, 8%, 42%);
     --color-white-500: hsl(206, 0%, 50%);
 
-  
     --color-blur: #9abadc96;
     --color-border: #E5E5E5;
 
-    /* ================== Tipografías ================== */
+    /* Tipografías */
     --font-inter: "Inter", sans-serif;
-    --font-work-sans: "Work Sans", sans-serif;
-    --font-Sora: "Sora", sans-serif;
+    
 
-    /* ================== Layout ================== */
+    /* Tamaños */
     --max-width: 1560px;
     --border-radius: 8px;
 
-    /* ================== Sombras ================== */
+    /* Sombras */
     --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 /* ================== Estilos Globales ================== */
 html {
