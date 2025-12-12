@@ -1,68 +1,99 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* ================== Colores ================== */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* Escala Green (50 → 950) */
+    --green-50:  #FAFFE5;
+    --green-100: #F3FFC6;
+    --green-200: #E6FF94;
+    --green-300: #D2FF56;
+    --green-400: #BBF724;
+    --green-500: #9CDE04;
+    --green-600: #79B200;
+    --green-700: #5A8704;
+    --green-800: #496A0A;
+    --green-900: #31470B;
+    --green-950: #1F3201;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Colores principales basados en tu diseño */
+    --color-black: #1C1C1C;
+    --color-dark-blue: #021024;
+
+    --color-black-100: hsl(240, 5%, 35%);
+    --color-black-200: hsl(240, 5%, 25%);
+    --color-black-300: hsl(240, 5%, 15%);
+    --color-black-400: hsl(240, 5%, 10%);
+
+    --color-white: hsl(206, 0%, 100%);
+    
+    --color-subtitulo: hsl(225, 8%, 42%);
+    --color-white-500: hsl(206, 0%, 50%);
+
+  
+    --color-blur: #9abadc96;
+    --color-border: #E5E5E5;
+
+    /* ================== Tipografías ================== */
+    --font-inter: "Inter", sans-serif;
+    --font-work-sans: "Work Sans", sans-serif;
+    --font-Sora: "Sora", sans-serif;
+
+    /* ================== Layout ================== */
+    --max-width: 1560px;
+    --border-radius: 8px;
+
+    /* ================== Sombras ================== */
+    --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+
+/* ================== Estilos Globales ================== */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    font-family: var(--font-Sora);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    line-height: 1.5;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* ================== Links ================== */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+  
+
+/* ================== Listas ================== */
+ul,
+ol {
+    list-style: none;
+}
+
+/* ================== Formularios ================== */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+    cursor: pointer;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* ================== Utilidades ================== */
+section,
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem;
 }
