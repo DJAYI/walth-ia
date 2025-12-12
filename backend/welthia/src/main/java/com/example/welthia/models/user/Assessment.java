@@ -70,4 +70,6 @@ public class Assessment {
 
     @Column(name="water_cups_day")
     private int waterCupsDay;
+
+    
 }
