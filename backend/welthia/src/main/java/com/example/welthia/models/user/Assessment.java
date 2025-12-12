@@ -71,5 +71,65 @@ public class Assessment {
     @Column(name="water_cups_day")
     private int waterCupsDay;
 
-    
+    // sueño
+    @Column(name="wake_difficulty")
+    private int wakeDifficulty;
+
+    @Column(name="night_awakenings")
+    private int nightAwakenings;
+
+    @Column(name="sleep_repair_score")
+    private int sleepRepairScore;
+
+    @Column(name="sleep_onset_score")
+    private int sleepOnsetScore;
+
+    //actividad fisica
+    @Column(name="activity_level")
+    @Enumerated(EnumType.STRING)
+    private ActivityLevel activityLevel;
+
+    @Column(name="exercise_frequency_per_week")
+    private int exerciseFrequencyPerWeek;
+
+    //Estrés / estado de ánimo
+    @Column(name="stress_level")
+    private int stressLevel;
+
+    @Column(name="end_of_day_feeling")
+    @Enumerated(EnumType.STRING)
+    private EndOfDayFeeling endOfDayFeeling;
+
+    private int wellbeingScore;
+
+    //cambio de habitos
+    @Column(name="readiness_change")
+    private int readinessChange;
+
+    @Column(name="confidence_change")
+    private int confidenceChange;   
+
+    //Alcohol / tabaco
+    @Column(name="drinks_alcohol")
+    private boolean drinksAlcohol;
+
+    @Column(name="alcohol_frequency")
+    @Enumerated(EnumType.ORDINAL)
+    private AlcoholFrequency alcoholFrequency;
+
+    @Column(name="smokes_tobacco")
+    private boolean smokesTobacco;
+
+    @Column(name="tobacco_units_per_day")
+    private int tobaccoUnitsPerDay;
+
+    //alimentacion minima
+    @Column(name="fruit_servings_day")
+    private int fruitServingsDay;
+
+    @Column(name="vegetable_servings_day")
+    private int vegetableServingsDay;
+
+    @Column(name="processed_food_week")
+    private int processedFoodWeek;
 }
